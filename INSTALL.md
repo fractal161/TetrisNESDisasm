@@ -1,12 +1,21 @@
 # Linux
 
+## Dependencies
+
+### Debian based (eg. Ubuntu, Pop!\_OS)
 	sudo apt-get install make gcc bison git python
 	pip install pillow
-	git clone https://github.com/CelestialAmber/TetrisNESDisasm
-	cd TetrisNESDisasm
+	
+### Arch Based (replace `yay` with your AUR helper of choice)
+	yay -S make gcc bison git python cc65
+	pip install pillow
+
+## Build
 
 To build `tetris.nes`:
 
+	git clone https://github.com/CelestialAmber/TetrisNESDisasm
+	cd TetrisNESDisasm
 	make
 
 
